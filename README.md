@@ -535,7 +535,7 @@ export default class Watcher {
 
   2. vm._update 将虚拟 DOM 转换为真实 DOM
 
-- 挂载 mount 生命周期钩子
+- 挂载 mounted 生命周期钩子
 
 
 
