@@ -1008,7 +1008,7 @@ function lifecycleMixin (Vue: Class<Component>) {
       // 使用 vm.__patch__ 进行 dom diff 并且生成真实 dom，最后挂载到 vm.$el 上
       vm.$el = vm.__patch__(vm.$el, vnode, hydrating, false /* removeOnly */)
     } else {
-      // 老 VNode 不存在，代表是更新操作，即页面更新走这里
+      // 老 VNode 存在，代表是更新操作，即页面更新走这里
       vm.$el = vm.__patch__(prevVnode, vnode)
     }
     restoreActiveInstance()
