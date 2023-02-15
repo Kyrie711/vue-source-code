@@ -4255,7 +4255,7 @@ export function defineReactive(
 
 先来看看依赖收集的逻辑：
 
-1. 通过 new Dep 创建一个 dep 实例，这个 dep 实例就是收集以来的
+1. 通过 new Dep 创建一个 dep 实例，这个 dep 实例就是收集依赖的
 
 2. 接下来看看 Object.defineProperty 的 get ：
 
